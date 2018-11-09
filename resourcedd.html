@@ -17,8 +17,8 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
     <!-- /Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
     <!-- //Fonts -->
 
 </head>
@@ -45,12 +45,27 @@
                 </div>
                 <ul class="text-left nav-honey">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="active ">Home</a>
                     </li>
 
 
-                    <li>
-                        <a href="about.html" >About us</a>
+                  <li class="nav-item dropdown">
+
+                       <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										About us
+									</a>
+
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item scroll" href="about.html">Mission</a>
+                                         <div class="dropdown-divider"></div>
+										<a class="dropdown-item scroll" href="">Vision</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll" href="">Values</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll" href="">Our Team</a>
+									</div>
+
                     </li>
                     <li class="nav-item dropdown">
 
@@ -85,7 +100,7 @@
                         </li>
                         <li class="nav-item dropdown">
 
-                             <a class="dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                             <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                           Resources
                         </a>
@@ -120,8 +135,15 @@
         <!-- banner-text -->
         <div class="page-inner">
           <div class="page-inner-content">
-            <h3>Digital Workplace Strategies Resources</h3>
-            <p>Expertise on web design, content marketing, SEO, and more to launch your business into the stratosphere.</p>
+            <h2 class="text-white">Resources</h2>
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Resources</li>
+            </ol>
+            </nav>
           </div>
 
 
@@ -130,44 +152,73 @@
         <!--// banner-inner -->
     </header>
     <!-- //header -->
-    <!--// banner-slider -->
-
-    <section class="banner-bottom-w3ls bg-light py-lg-5 py-4">
-        <div class="container">
-            <div class="inner-sec py-lg-5 py-4">
-                <h3 class="tittle-w3 text-center pb-4"><span class="sub-tittle">Our</span>Blog</h3>
-            </div>
-        </div>
-    </section>
-    <section class="banner-bottom-w3ls bg-White py-lg-5 py-4">
-        <div class="container">
-            <div class="inner-sec pt-lg-5 pt-4">
-                <h3 class="tittle-w3 text-center pb-4"><span class="sub-tittle">Our</span>Core Values</h3>
-                <div class="row">
-                  <div class="col-md-4">
-                      <h5>Data Confidentiality</h5>
-                      <p>We believe in data confidentiality and abide by the rules and regulations of data protection and data security law. Our prime responsibility is to provide comprehensive analytics to our clients while giving utmost importance to the confidentiality and privacy of data.</p>
-                  </div>
-                  <div class="col-md-4">
-                      <h5>Research and Development</h5>
-                      <p>We truly believe in research and development. We do research in the field of Artifical Intelligence, Machine Learning and Data Analytics to create products and solutions which help us to serve our clients better.</p>
-                  </div>
-                  <div class="col-md-4">
-                      <h5>Service to the Client</h5>
-                      <p>We treat the client as the purpose of our existence. We are entitled to provide them with the best on-time services. We are available for our client 24*7.</p>
-                  </div>
-                  <div class="col-md-4">
-                      <h5>Teamwork</h5>
-                      <p>Our collective effort can give us a good result but it is the combined effort of the team which produces the best result. We truly believe in this and so teamwork is an essential component of the values that we share with our client</p>
-                  </div>
-                  <div class="col-md-4">
-                      <h5>Excellence</h5>
-                      <p>We are committed to providing excellent service and inputs to the client. Our Intellectual curiosity propels us to acquire new skill sets which help us in providing better solution to the client.</p>
-                  </div>
+    <section class="banner-bottom-w3ls py-lg-5 py-4" id="speakers">
+            <div class="container">
+                <div class="inner-sec py-lg-5 py-4 speak">
+                    <h3 class="tittle-w3 text-center"><span class="sub-tittle">Our Latest.</span> News &amp; Events</h3>
+                    <div class="row mt-lg-5 mt-4">
+                        <div class="col-md-6 team-img">
+                            <a href="single.html"><img src="images/n1.jpg" class="img-fluid" alt="user-image"></a>
+                        </div>
+                        <div class="col-md-6 team-info">
+                            <h3><span class="sub-tittle">01</span> Tech beauty</h3>
+                            <h4 class="my-3"><a href="single.html" class="text-dark">VIVAMUS ID TEMPOR FELIS. CRAS SAGITTIS MI SIT AMET</a></h4>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <ul class="team-icons new-inf mt-md-4 mt-3 d-flex">
+                                <li><a href="#"><span class="fa fa-calendar"></span></a> Sep 24.2018</li>
+                                <li><a href="#"><span class="fa fa-comment-o mx-1"></span> 20</a></li>
+                                <li><a href="#"><span class="fa fa-heart-o"></span> 30 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mt-4">
+                        <div class="col-md-6 team-info">
+                            <h3><span class="sub-tittle">02</span> Nothing Works Better</h3>
+                            <h4 class="my-3"><a href="single.html" class="text-dark">VIVAMUS ID TEMPOR FELIS. CRAS SAGITTIS MI SIT AMET</a></h4>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                             <ul class="team-icons new-inf mt-md-4 mt-3 d-flex">
+                                <li><a href="#"><span class="fa fa-calendar"></span></a> Sep 26.2018</li>
+                                <li><a href="#"><span class="fa fa-comment-o mx-1"></span> 20</a></li>
+                                <li><a href="#"><span class="fa fa-heart-o"></span> 32 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 team-img">
+                            <a href="single.html"><img src="images/n2.jpg" class="img-fluid" alt="user-image"></a>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mt-4">
+                        <div class="col-md-6 team-img">
+                            <a href="single.html"><img src="images/n3.jpg" class="img-fluid" alt="user-image"></a>
+                        </div>
+                        <div class="col-md-6 team-info">
+                            <h3><span class="sub-tittle">03</span>Tech future</h3>
+                            <h4 class="my-3"><a href="single.html" class="text-dark">VIVAMUS ID TEMPOR FELIS. CRAS SAGITTIS MI SIT AMET</a></h4>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <ul class="team-icons new-inf mt-md-4 mt-3 d-flex">
+                                <li><a href="#"><span class="fa fa-calendar"></span></a> Sep 29.2018</li>
+                                <li><a href="#"><span class="fa fa-comment-o mx-1"></span> 20</a></li>
+                                <li><a href="#"><span class="fa fa-heart-o"></span> 30 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mt-4">
+                        <div class="col-md-6 team-info">
+                            <h3><span class="sub-tittle">04</span>Pretty&amp;fun</h3>
+                            <h4 class="my-3"><a href="single.html" class="text-dark">VIVAMUS ID TEMPOR FELIS. CRAS SAGITTIS MI SIT AMET</a></h4>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                           <ul class="team-icons new-inf mt-md-4 mt-3 d-flex">
+                                <li><a href="#"><span class="fa fa-calendar"></span></a> Oct 11.2018</li>
+                                <li><a href="#"><span class="fa fa-comment-o mx-1"></span> 00</a></li>
+                                <li><a href="#"><span class="fa fa-heart-o"></span> 38 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 team-img">
+                            <a href="single.html"> <img src="images/n4.jpg" class="img-fluid" alt="user-image"></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
 
     <div class="footer-top">
@@ -197,33 +248,33 @@
                     <!-- instagram posts -->
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t1.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t1.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t2.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t2.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t3.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t3.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t4.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t4.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t5.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t5.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                     <div class="col-md-2 col-sm-2 instagram-post-img">
                         <a href="single.html">
-            <img src="images/t6.jpg" class="img-fluid" alt="">
-          </a>
+						<img src="images/t6.jpg" class="img-fluid" alt="">
+					</a>
                     </div>
                 </div>
             </div>
@@ -291,22 +342,22 @@
                Wireon
                 </a>
                     </h2>
-                    <p class="my-4 text-justify">Wireon Services is a Research and Consulting firm with key focus on Artificial intelligence, Data Science and Business Analytics with an aim to help the organizations to make better management decision.</p>
+                    <p class="my-4 text-justify">Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus. Proin eget gravida odio.</p>
                     <h3>Follow Us</h3>
                     <ul class="social-icons text-center d-flex">
                         <li>
                             <a href="#">
-                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                               Facebook
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Twitter
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                              <i class="fa fa-linkedin" aria-hidden="true"></i>
+                              Google +
                             </a>
                         </li>
 
@@ -375,15 +426,16 @@
             <hr>
             <div class="d-flex justify-content-between pt-lg-3  footer-bottom-cpy">
                 <div class="copy-right-w">
-                    <p>© 2018 Wireon. All rights reserved.</p>
+                    <p>© 2018 Convention. All rights reserved.</p>
                 </div>
-                <div class="pb-md-0 pb-4">
-                    <p>
-                      <a href="#" class="reg-in">
-                          Privacy and Policy
-                      </a>
-                    </p>
-
+                <div class="social-content pb-md-0 pb-4">
+                    <ul class="social-icons text-center d-flex">
+                        <li class="ml-lg-5">
+                            <a href="#" class="reg-in">
+                                Privacy and Policy
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
