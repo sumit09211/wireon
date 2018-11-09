@@ -135,6 +135,7 @@ div#word-mark h1 a {
     line-height: 0;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 2px rgba(45, 45, 45, 0.53);
 }
 
 nav.navShadow div#word-mark h1 a {
