@@ -41,7 +41,6 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -69,18 +68,20 @@ header.banner_section {
 }
 
 button.btn.login-btn {
-    padding: 8px 24px;
+    padding: 8px 15px;
     background: none;
     color: #fff;
     border: none;
-    font-size: 0.9em;
+    font-size: 0.75em;
     letter-spacing: 1px;
     border: 2px solid #fff;
+    font-weight: 600;
 }
 
 button.btn.login-btn:hover {
     background: #ffc107;
     color: #0e0d0d;
+    border-color: #ffc107;
 }
 
 /*** Navigation Styles ***/
@@ -144,9 +145,9 @@ nav.navShadow div#word-mark h1 a {
 }
 
 nav.navShadow button.btn.login-btn {
-    border: 2px solid #222;
-    color: #fff;
-    background: #222;
+  border: 2px solid #2ab53f;
+      color: #fff;
+      background: #2ab53f;
 }
 
 /*** Menu Styles ***/
@@ -170,11 +171,10 @@ nav.navShadow button.btn.login-btn {
     display: block;
     color: #fff;
     font-size: 0.75em;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-
     font-family: 'Poppins', sans-serif;
     padding: 0.5em;
 }
@@ -283,12 +283,12 @@ nav.navShadow .nav-honey li a {
     background: url(../images/4.jpg) no-repeat 0px 0px;
 }
 
-.banner-info-w3layouts {
+.banner-info-w {
     padding: 15% 0% 0 3%;
     width: 60%;
 }
 
-.banner-info-w3layouts h3 {
+.banner-info-w h3 {
     font-size: 8em;
     color: #fff;
     font-weight: 700;
@@ -297,18 +297,18 @@ nav.navShadow .nav-honey li a {
     line-height: 1em;
 }
 
-.banner-info-w3layouts p {
+.banner-info-w p {
     font-size: 1em;
     color: #fbbc05;
     margin: 1.5em 0;
     letter-spacing: 1px;
 }
 
-.banner-info-w3layouts i {
+.banner-info-w i {
     vertical-align: middle;
 }
 
-/*-- //banner-info-w3layouts-top --*/
+/*-- //banner-info-w-top --*/
 
 /*--social_media_icons_style--*/
 
@@ -2623,6 +2623,7 @@ h3.tittle-w3 {
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 450px;
+    border-radius: 70% 30% 70% 30% / 30% 70% 30% 70% ;
 }
 
 .play {
@@ -3046,7 +3047,7 @@ form.newsletter {
     display: inline-block;
 }
 
-.copy-right-w3layouts p a {
+.copy-right-w p a {
     color: #414344;
 }
 
@@ -3086,6 +3087,7 @@ ul.social-icons li a {
     font-size: 0.8em;
     letter-spacing: 1px;
     text-transform: uppercase;
+    width: 42px;
 }
 
 ul.social-icons li a {
@@ -3097,7 +3099,7 @@ ul.social-icons li:nth-child(2) a {
 }
 
 ul.social-icons li:nth-child(3) a {
-    background: #d43f3a;
+    background: #4875B4;
 }
 
 ul.social-icons li:nth-child(4) a {
@@ -3146,21 +3148,29 @@ li.fallow {
 /*--/abou-page--*/
 
 .page-inner {
-    background: url(../images/2.jpg) no-repeat 0px 0px;
+    background: url(../images/hero-background.svg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 250px;
+    min-height: 280px;
     text-align: center;
 }
 
 .page-inner-content{
-    position: relative;
-    padding: 120px 15px 40px;
+  position: relative;
+  padding: 165px 50px 40px;
+  color: #fff;
+  text-align: left;
 }
 
+.page-inner-content p{
+  font-size: 1em;
+color: #fbbc05;
+margin: .5em 0;
+letter-spacing: 1px;
+}
 li.breadcrumb-item {
     font-size: 0.9em;
     letter-spacing: 1px;
@@ -3214,7 +3224,7 @@ ol.breadcrumb {
 /*-- //to-top --*/
 
 @media(max-width:1366px) {
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 7em;
     }
     .banner-top,
@@ -3235,7 +3245,7 @@ ol.breadcrumb {
 }
 
 @media(max-width:1080px) {
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 5.5em;
     }
     .banner-top,
@@ -3284,7 +3294,7 @@ ol.breadcrumb {
     .team-info h3 {
         font-size: 1.5em;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 18% 0% 0 3%;
         width: 55%;
     }
@@ -3309,7 +3319,7 @@ ol.breadcrumb {
         padding: 0.5em;
         letter-spacing: 1px;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 26% 0% 0 3%;
         width: 58%;
     }
@@ -3392,7 +3402,7 @@ ol.breadcrumb {
         width: 24%;
     }
     /**nav**/
-    .banner-info-w3layouts p {
+    .banner-info-w p {
         font-size: 0.9em;
         margin: 1.5em 0 0 0;
         letter-spacing: 1px;
@@ -3403,10 +3413,10 @@ ol.breadcrumb {
     .nav-honey li {
         margin-left: 4px;
     }
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 5em;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 26% 0% 0 3%;
         width: 58%;
     }
@@ -3414,7 +3424,7 @@ ol.breadcrumb {
 }
 
 @media(max-width:768px) {
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 25% 0% 0 3%;
         width: 58%;
     }
@@ -3427,7 +3437,7 @@ ol.breadcrumb {
 }
 
 @media(max-width:767px) {
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 26% 0% 0 3%;
         width: 58%;
     }
@@ -3464,11 +3474,11 @@ ol.breadcrumb {
     .banner-top3 {
         min-height: 510px;
     }
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 4em;
         line-height: 1.2em;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 23% 0% 0 3%;
         width: 58%;
     }
@@ -3496,11 +3506,11 @@ ol.breadcrumb {
 }
 
 @media(max-width:600px) {
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 3em;
         line-height: 1.2em;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         width: 90%;
     }
     .banner-top,
@@ -3594,7 +3604,7 @@ ol.breadcrumb {
     h3.tittle-w3 {
         font-size: 2em;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 30% 0% 0 3%;
         width: 100%;
     }
@@ -3607,11 +3617,11 @@ ol.breadcrumb {
     .banner-top3 {
         min-height: 365px;
     }
-    .banner-info-w3layouts {
+    .banner-info-w {
         padding: 30% 0% 0 3%;
         width: 100%;
     }
-    .banner-info-w3layouts h3 {
+    .banner-info-w h3 {
         font-size: 2.5em;
     }
     h3.tittle-w3 {
