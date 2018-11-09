@@ -123,9 +123,7 @@ ul.nav-honey {
 }
 
 div#word-mark {
-    width: 120px;
-    border-radius: 90px;
-    margin-left: 8px;
+    width: 200px;
     opacity: 1;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -133,8 +131,7 @@ div#word-mark {
 
 div#word-mark h1 a {
     color: #fff;
-    font-size: 1em;
-    font-weight: 800;
+    font-size: .75em;
     line-height: 0;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
