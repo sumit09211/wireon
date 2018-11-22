@@ -279,24 +279,42 @@ nav.navShadow .nav-honey li a {
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    min-height: 800px;
+    min-height: 700px;
+}
+.rslides li > div:before{
+  content: "";
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .banner-top1 {
     background: url(../images/2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+
 }
 
 .banner-top2 {
     background: url(../images/3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+
 }
 
 .banner-top3 {
     background: url(../images/4.jpg) no-repeat 0px 0px;
+    background-size: cover;
+
 }
 
 .banner-info-w {
     padding: 15% 0% 0 3%;
     width: 60%;
+    position: relative;
+    z-index: 1
 }
 
 .banner-info-w h3 {
@@ -3238,12 +3256,12 @@ ol.breadcrumb {
     .banner-info-w h3 {
         font-size: 7em;
     }
-    .banner-top,
+    /* .banner-top,
     .banner-top1,
     .banner-top2,
     .banner-top3 {
         min-height: 775px;
-    }
+    } */
     .team-info h3 {
         font-size: 2em;
     }
